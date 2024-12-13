@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otisspecial crochet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .intro, .gallery, .registration {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>otisspecial crochet</h1>
+    <p>Your home for all things crochet!</p>
+</header>
+
+<nav>
+    <a href="#intro">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#registration">Join Us</a>
+    
+</nav>
+
+<div class="container">
+    <!-- Introduction Section -->
+    <section class="intro" id="intro">
+        <h2>Welcome to Otisspecial crochet!</h2>
+        <p>
+            Otisspecial is a master of crochet artistry, blending creativity and precision into every stitch. Their 
+            work showcases exquisite detail, innovative designs, and a deep understanding of textures and patterns. 
+            Each piece is not only visually stunning but also a testament to their dedication and skill. Highly recommended for unique, handcrafted creations!We are a community of passionate crocheters who love to create beautiful pieces of art using yarn.
+             Whether you are a beginner or an expert, this is the perfect place for you to learn, share, and 
+             grow your skills. Join us today and be part of the crochet revolution!</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Crochet Creations</h2>
+        <div class="gallery-item">
+            <img src="img.jpg/1733808047214.jpg" alt="Crochet Piece 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img.jpg/Granny stitch shirt and granny stitch shorts unisex two-piece set.jfif" alt="granny square shirt">
+        </div>
+        <div class="gallery-item">
+            <img src="img.jpg/download (1).jfif" alt="Crochet Piece 3">
+        </div>
+        <div class="gallery-item">
+            <img src="img.jpg/download.jfif" alt="Crochet Piece 4">
+        </div>
+        <div class="gallery-item">
+            <img src="img.jpg/1733808112801.jpg" alt="Crochet Piece 5">
+        </div>
+    </section>
+
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+        <h2>Join Our Community</h2>
+        <p>Sign up to become a member and connect with other crocheters. Share your projects, 
+            get inspired, and be part of our vibrant community!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Create a Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="crocheter">
+                <input type="checkbox" id="crocheter" name="crocheter" required>
+                I am a crocheter and want to join the community.
+            </label>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+
+    
+</div>
+
+<footer>
+    <p>&copy; 2024 otisspecial. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
